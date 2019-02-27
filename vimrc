@@ -12,7 +12,8 @@ set incsearch           " search as characters are entered
 set ignorecase
 set smartcase
 set whichwrap+=<,>,h,l,[,]
-colorscheme molokai
+colorscheme gruvbox
+set background=dark
 syntax on
 let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
@@ -30,3 +31,11 @@ map <Leader> <Plug>(easymotion-prefix)
 map s <Plug>(easymotion-s)
 nmap <c-s> :w<cr>
 imap <c-s> <esc>:w<cr>a
+function! s:DiffWithSaved()
+    let filetype=&ft
+    diffthis
+    vnew | r # | normal! 1Gdd
+    diffthis
+    exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
+endfunction
+com! DiffSaved call s:DiffWithSaved()
