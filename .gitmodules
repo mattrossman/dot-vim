@@ -1,6 +1,6 @@
 [submodule "colors/src/molokai"]
 	path = colors/src/molokai
 	url = git@github.com:tomasr/molokai.git
-[submodule "/Users/matt/.vim/bundle/Vundle.vim"]
-	path = /Users/matt/.vim/bundle/Vundle.vim
+[submodule "bundle/Vundle.vim"]
+	path = bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
