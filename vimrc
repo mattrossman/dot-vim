@@ -2,6 +2,7 @@ runtime vundle-config.vim
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 set lazyredraw          " redraw only when we need to.
+set bs=2            " allow backspace in insert mode
 set tabstop=4       " number of visual spaces per TAB
 set expandtab       " tabs are spaces
 set shiftwidth=0

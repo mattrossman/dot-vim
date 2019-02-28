@@ -13,6 +13,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'morhetz/gruvbox'
 Plugin 'tomasr/molokai'
 Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
