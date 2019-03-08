@@ -1,4 +1,5 @@
 runtime vundle-config.vim
+set ruler               " show line, column number in bottom bar
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 set lazyredraw          " redraw only when we need to.
