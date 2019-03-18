@@ -18,7 +18,6 @@ colorscheme gruvbox
 set background=dark
 syntax on
 let mapleader=","
-nnoremap <leader><space> :nohlsearch<CR>
 set exrc
 set secure
 set hidden
@@ -29,7 +28,6 @@ set relativenumber
 filetype indent on
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-map <Leader> <Plug>(easymotion-prefix)
 map s <Plug>(easymotion-s)
 nmap <c-s> :w<cr>
 imap <c-s> <esc>:w<cr>a
@@ -47,3 +45,12 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
+nnoremap <leader>s :w<cr>
+inoremap <leader>s <C-c>:w<cr>
+nnoremap <leader>- :sp<CR>
+nnoremap <leader>\| :vsp<CR>
+set splitbelow
+set splitright
+noremap <leader>q :q<cr>
+nnoremap Q @q
+vnoremap Q :norm @q<cr>
