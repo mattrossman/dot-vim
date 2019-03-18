@@ -54,3 +54,5 @@ set splitright
 noremap <leader>q :q<cr>
 nnoremap Q @q
 vnoremap Q :norm @q<cr>
+inoremap jk <Esc>
+inoremap kj <Esc>
