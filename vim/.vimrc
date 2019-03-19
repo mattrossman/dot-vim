@@ -52,3 +52,4 @@ noremap <leader>q :q<cr>
 nnoremap Q @q
 vnoremap Q :norm @q<cr>
 imap <leader><leader> <Esc>
+vmap <leader><leader> <Esc>
