@@ -28,9 +28,6 @@ set relativenumber
 filetype indent on
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-map s <Plug>(easymotion-s)
-nmap <c-s> :w<cr>
-imap <c-s> <esc>:w<cr>a
 function! s:DiffWithSaved()
     let filetype=&ft
     diffthis
@@ -54,5 +51,4 @@ set splitright
 noremap <leader>q :q<cr>
 nnoremap Q @q
 vnoremap Q :norm @q<cr>
-inoremap jk <Esc>
-inoremap kj <Esc>
+imap <leader><leader> <Esc>
