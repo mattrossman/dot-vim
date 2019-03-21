@@ -50,7 +50,10 @@ nnoremap <leader>\| :vsp<CR>
 set splitbelow
 set splitright
 noremap <leader>q :q<cr>
+nnoremap <leader>Q :q!<cr>
+inoremap <leader>Q <C-c>:q!<cr>
 nnoremap Q @q
 vnoremap Q :norm @q<cr>
 imap <leader><leader> <Esc>
 vmap <leader><leader> <Esc>
+autocmd BufNewFile,BufRead .bash_* set syntax=sh
