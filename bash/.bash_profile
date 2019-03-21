@@ -10,3 +10,6 @@ parse_git_branch() {
 }
 
 export PS1="\[\e[92m\]\u@\h\[\e[0m\] \[\e[94m\]\W\[\e[0m\]\[\033[38;5;202m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+# ALIASES
+alias g=git
