@@ -1,6 +1,3 @@
-[user]
-	email = mrossman@umass.edu
-	name = mattrossman
 [alias]
     l = log --oneline --decorate --graph
 
@@ -20,3 +17,6 @@
     s = status --short --branch
 [core]
 	editor = vim
+[user]
+	email = mrossman@umass.edu
+	name = mattrossman
