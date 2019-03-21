@@ -20,3 +20,5 @@
 [user]
 	email = mrossman@umass.edu
 	name = mattrossman
+[merge]
+	ff = false
