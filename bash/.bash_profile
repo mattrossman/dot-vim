@@ -5,6 +5,10 @@ if [ -f $HOME/.bashrc ]; then
     source $HOME/.bashrc
 fi
 
+if [ -f $HOME/.bash_local ]; then
+    source $HOME/.bash_local
+fi
+
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
