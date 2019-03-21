@@ -16,6 +16,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'jeetsukumaran/vim-indentwise'
+Plugin 'michaeljsmith/vim-indent-object'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
