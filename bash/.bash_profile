@@ -16,6 +16,7 @@ export PS1="\[\e[92m\]\u@\h\[\e[0m\] \[\e[94m\]\W\[\e[0m\]\[\033[38;5;202m\]\$(p
 # ALIASES
 alias g=git
 alias gnka='ssh a0413597@guernika.lab.inf.uc3m.es'
+alias server='python -m http.server'
 
 # optional local overrides
 if [ -f $HOME/.bash_local ]; then
