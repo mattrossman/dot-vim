@@ -13,6 +13,8 @@
     c = commit
     co = checkout
     a = add
+    ps = push
+    pl = pull
     d = diff
     dc = diff --cached
     s = status --short --branch
