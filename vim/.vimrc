@@ -56,4 +56,5 @@ nnoremap Q @q
 vnoremap Q :norm @q<cr>
 imap <leader><leader> <Esc>
 vmap <leader><leader> <Esc>
+nnoremap gp `[v`]
 autocmd BufNewFile,BufRead .bash_* set syntax=sh
