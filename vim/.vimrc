@@ -25,6 +25,9 @@ set smartindent
 set autoindent
 set number
 set relativenumber
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
 filetype indent plugin on
 set fo+=t
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
