@@ -46,18 +46,28 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
-nnoremap <leader>s :w<cr>
-inoremap <leader>s <C-c>:w<cr>
 nnoremap <leader>- :sp<CR>
 nnoremap <leader>\| :vsp<CR>
 set splitbelow
 set splitright
+nnoremap <leader>w :w<cr>
+inoremap <leader>w <C-c>:w<cr>
+nnoremap <leader>W :wq<cr>
+inoremap <leader>W <C-c>:wq<cr>
 noremap <leader>q :q<cr>
 nnoremap <leader>Q :q!<cr>
 inoremap <leader>Q <C-c>:q!<cr>
 nnoremap Q @q
 vnoremap Q :norm @q<cr>
+nnoremap <leader>R :e $MYVIMRC<CR>
+nnoremap <leader>r :source $MYVIMRC<CR>
+nnoremap <leader>V :e ~/.vim/vundle-config.vim<CR>
 imap <leader><leader> <Esc>
 vmap <leader><leader> <Esc>
 nnoremap gp `[v`]
 autocmd BufNewFile,BufRead .bash_* set syntax=sh
+set backupdir=~/.vim/.backup//,/tmp//
+set directory=~/.vim/.swp//,/tmp//
+set undodir=~/.vim/.undo//,/tmp//
+set backup
+set undofile

@@ -1,4 +1,6 @@
 .netrwhist
-*.swp
+.swp/
+.undo/
+.backup/
 bundle/
 !bundle/Vundle.vim/
