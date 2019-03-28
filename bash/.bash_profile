@@ -18,6 +18,11 @@ alias g=git
 alias gnka='ssh a0413597@guernika.lab.inf.uc3m.es'
 alias server='python -m http.server'
 
+# configure thefuck if it's installed
+if [ $(command -v thefuck) ]; then
+    eval $(thefuck --alias)
+fi
+
 # optional local overrides
 if [ -f $HOME/.bash_local ]; then
     source $HOME/.bash_local
