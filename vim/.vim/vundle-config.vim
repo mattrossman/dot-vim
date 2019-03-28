@@ -14,6 +14,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
