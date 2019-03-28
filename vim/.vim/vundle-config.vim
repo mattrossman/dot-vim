@@ -14,6 +14,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
