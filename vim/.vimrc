@@ -46,6 +46,8 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
+map <Leader>a :bprev<Return>
+map <Leader>s :bnext<Return>
 nnoremap <leader>- :sp<CR>
 nnoremap <leader>\| :vsp<CR>
 set splitbelow
