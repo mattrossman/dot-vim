@@ -16,7 +16,7 @@ Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'powerline/powerline-fonts'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
