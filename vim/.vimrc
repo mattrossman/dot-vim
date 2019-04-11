@@ -70,6 +70,7 @@ vnoremap Q :norm @q<cr>
 nnoremap <leader>R :e $MYVIMRC<CR>
 nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <leader>V :e ~/.vim/vundle-config.vim<CR>
+set timeoutlen=1000 ttimeoutlen=0  " no esc delay please
 imap <leader><leader> <Esc>
 vmap <leader><leader> <Esc>
 nnoremap gp `[v`]
