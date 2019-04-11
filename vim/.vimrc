@@ -32,6 +32,11 @@ filetype indent plugin on
 set fo+=t
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+let g:chunk_size=5
+nmap <silent> J :execute "normal " . g:chunk_size . "j"<CR>
+nmap <silent> K :execute "normal " . g:chunk_size . "k"<CR>
+nmap H B
+nmap L W
 function! s:DiffWithSaved()
     let filetype=&ft
     diffthis
