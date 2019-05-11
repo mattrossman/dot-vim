@@ -88,3 +88,4 @@ let g:airline#extensions#default#section_truncate_width = {
       \ 'warning': 80,
       \ 'error': 80,
       \ }
+set nrformats+=alpha  " allow alphabet increments
