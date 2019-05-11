@@ -19,6 +19,8 @@
     dc = diff --cached
     s = status --short --branch
     branch-name = rev-parse --abbrev-ref HEAD
+    uncommit = reset --soft HEAD^
+    unstage = reset HEAD
 [core]
 	editor = vim
 [user]
