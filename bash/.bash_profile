@@ -30,11 +30,5 @@ fi
 
 # fasd config if installed
 if [ $(command -v fasd) ]; then
-    fasd_cache="$HOME/.fasd-init-bash"
-    if [ "$(command -v fasd)" -nt "$fasd_cache" -o ! -s "$fasd_cache" ]; then
-        fasd --init posix-alias bash-hook bash-ccomp bash-ccomp-install >| "$fasd_cache"
-    fi
-    source "$fasd_cache"
-    unset fasd_cache
-    alias v='f -e vim' # quick opening files with vim
+    eval "$(fasd --init posix-alias posix-alias bash-hook bash-ccomp)"
 fi
