@@ -21,6 +21,7 @@
     branch-name = rev-parse --abbrev-ref HEAD
     uncommit = reset --soft HEAD^
     unstage = reset HEAD
+    discard = checkout --
 [core]
 	editor = vim
 [user]
