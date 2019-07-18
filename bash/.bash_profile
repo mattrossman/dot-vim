@@ -13,8 +13,14 @@ parse_git_branch() {
 # \e is the same as \033 for ESCAPE character
 export PS1="\[\e[92m\]\u@\h\[\e[0m\] \[\e[94m\]\W\[\e[0m\]\[\033[38;5;202m\]\$(parse_git_branch)\[\033[00m\] $ "
 
+# Git autocompletion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # ALIASES
 alias g=git
+complete -F _git g  # Ensure autocompletion still works
 alias gnka='ssh a0413597@guernika.lab.inf.uc3m.es'
 alias server='python -m http.server'
 
