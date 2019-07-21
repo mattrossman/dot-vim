@@ -89,3 +89,4 @@ let g:airline#extensions#default#section_truncate_width = {
       \ 'error': 80,
       \ }
 set nrformats+=alpha  " allow alphabet increments
+let g:closetag_filenames = '*.html,*.vue'

@@ -18,6 +18,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'powerline/powerline-fonts'
 Plugin 'posva/vim-vue'
+Plugin 'alvan/vim-closetag'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
