@@ -60,7 +60,7 @@ inoremap <leader>w <C-c>:w<cr>
 nnoremap <leader>W :wq<cr>
 inoremap <leader>W <C-c>:wq<cr>
 noremap <leader>q :q<cr>
-nnoremap <leader>Q :q!<cr>
+nnoremap <leader>Q :qall<cr>
 inoremap <leader>Q <C-c>:q!<cr>
 nnoremap Q @q
 vnoremap Q :norm @q<cr>
