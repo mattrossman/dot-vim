@@ -1,9 +1,9 @@
+# Add the following to the end of your .bashrc
+# [ -r ~/.bash_shared ] && . ~/.bash_shared
+
+
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
-if [ -f $HOME/.bashrc ]; then
-    source $HOME/.bashrc
-fi
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -37,4 +37,8 @@ fi
 # fasd config if installed
 if [ $(command -v fasd) ]; then
     eval "$(fasd --init posix-alias posix-alias bash-hook bash-ccomp)"
+fi
+
+if [ -d $HOME/bin ]; then
+    export PATH=$HOME/bin:$PATH
 fi
